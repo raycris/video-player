@@ -3,6 +3,13 @@
   height: 100%;
 }
 
+.btnContainer{
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+
+}
+
 @media (min-width: 768px) {
   .videoCase {
     height: 500px;
