@@ -1,8 +1,17 @@
 import React from "react";
 
-const Video = () => {
+const Video = (videoSelected) => {
   return (
-    <div></div>
+    <div>
+      <video
+        loop
+        controls
+        autoPlay
+        muted
+        autostart="true"
+        src={videoSelected}
+      />
+    </div>
   );
 };
 
