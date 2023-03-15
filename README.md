@@ -1,8 +1,8 @@
-# video player
+# Video player
 
 In our project, we will allow users to toggle through several different videos using a radio input. 
 
-In particular, we will learn how to pass down functions to update state in the parent components from the child component. This pattern is called lifting state up and is a very important pattern to know in React.
+In particular, we will learn how to pass down functions to update state in the parent components from the child component. This pattern is called lifting state up and is a very important pattern to know in React. We have a few button that maybe you'll need to play video in loop or play automatically
 
 ## To start the project
 
