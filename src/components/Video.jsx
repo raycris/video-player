@@ -1,13 +1,17 @@
 import React from "react";
 
-const Video = (videoSelected) => {
+import styles from "./Video.module.css"
+
+const Video = ({videoSelected}) => {
+  console.log(videoSelected);
   return (
-    <div>
+    <div className={styles.container}>
       <video
         loop
         controls
         autoPlay
         muted
+        className={styles.videoCase}
         autostart="true"
         src={videoSelected}
       />

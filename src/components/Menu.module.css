@@ -1,0 +1,13 @@
+.radio-inputs-container {
+  padding: 5px;
+  display: inline-block;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.radio {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

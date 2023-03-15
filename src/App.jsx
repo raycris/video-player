@@ -14,19 +14,17 @@ const videos = {
 };
 
 const videoNames = Object.keys(videos);
-console.log(videoNames);
 
 function App() {
   const [videoSelected, setVideoSelected] = useState(videos.deer);
 
   function onSelectVideo(video) {
     const videoSelected = videos[video];
-    console.log(videoSelected);
     setVideoSelected(videoSelected);
   }
 
   return (
-    <div>
+    <div className="main-container">
       <h1>Video Player</h1>
       <Menu onSelectVideo={onSelectVideo} videoValues={videoNames}/>
       <Video videoSelected={videoSelected} />
