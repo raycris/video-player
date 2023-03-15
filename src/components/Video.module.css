@@ -10,9 +10,25 @@
 
 }
 
+.btn{
+  color: rgb(218, 215, 215);
+  border: 1px solid rgb(218, 215, 215);
+  height: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btnPlay{
+  background-color: rgb(10, 10, 161);
+}
+
+.btnStop{
+  background-color: rgb(161, 10, 10);
+}
+
 @media (min-width: 768px) {
   .videoCase {
-    height: 500px;
     width: 900px;
+    height: auto;
   }
 }

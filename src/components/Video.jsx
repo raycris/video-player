@@ -6,17 +6,14 @@ const Video = ({ videoSelected }) => {
   const [autoPlay, setAutoPlay] = useState(true);
   const [videoLoop, setVideoLoop] = useState(false);
 
+ 
   const handleLoop = () => {
     setVideoLoop(!videoLoop);
-    console.log(videoLoop);
   };
 
   const handleAutoPlay = () => {
     setAutoPlay(!autoPlay);
-    console.log("autoplay: "+autoPlay);
   };
-
-
 
   return (
     <div className={styles.container}>
@@ -30,13 +27,22 @@ const Video = ({ videoSelected }) => {
         src={videoSelected}
       />
       <div className={styles.btnContainer}>
-
-      <button onClick={handleLoop}>
-        {videoLoop ? "Stop loop" : "Play loop"}
-      </button>
-      <button onClick={handleAutoPlay}>
-        {autoPlay ? "Stop autoPlay" : "Auto play"}
-      </button>
+        <button
+          onClick={handleLoop}
+          className={`${styles.btn} ${
+            videoLoop ? styles.btnStop : styles.btnPlay
+          }`}
+        >
+          {videoLoop ? "Stop loop" : "Play loop"}
+        </button>
+        <button
+          onClick={handleAutoPlay}
+          className={`${styles.btn} ${
+            autoPlay ? styles.btnPlay : styles.btnStop
+          } `}
+        >
+          {autoPlay ? "Stop autoPlay" : "Auto play"}
+        </button>
       </div>
     </div>
   );
